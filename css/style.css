@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #eee; }
+  .header__title {
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .header__sub-title {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5rem; }
+  .header__intro {
+    font-weight: 300;
+    margin-bottom: 5rem; }
+  .header__profile-pic {
+    display: block;
+    width: 12rem;
+    height: auto;
+    border-radius: 10rem; }
+
+.social,
+.nav {
+  list-style: none;
+  display: flex; }
+
+.social {
+  margin-top: 2rem;
+  position: relative; }
+  .social__item {
+    margin-left: 1rem; }
+  .social__link {
+    text-decoration: none;
+    color: rgba(238, 238, 238, 0.845);
+    transition: all 0.2s ease; }
+  .social__link:hover {
+    color: #eeeeee; }
+
+.nav {
+  margin-top: 8rem;
+  position: relative; }
+  .nav__item {
+    margin-left: 3rem; }
+  .nav__link {
+    text-decoration: none;
+    color: rgba(238, 238, 238, 0.845);
+    transition: all 0.2s ease;
+    text-transform: uppercase; }
+  .nav__link:hover {
+    color: #eeeeee; }
+  .nav::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 1px solid rgba(238, 238, 238, 0.5);
+    width: 50rem;
+    top: -3rem;
+    left: -5rem; }

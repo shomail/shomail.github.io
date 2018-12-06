@@ -1,0 +1,90 @@
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #eee;
+
+  &__title {
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+
+  &__intro {
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+
+  &__profile-pic {
+    display: block;
+    width: 12rem;
+    height: auto;
+    border-radius: 10rem;
+  }
+}
+
+.social,
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.social {
+  margin-top: 2rem;
+  position: relative;
+  &__item {
+    margin-left: 1rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgba(238, 238, 238, 0.845);
+    transition: all 0.2s ease;
+  }
+  &__link:hover {
+    color: rgba(238, 238, 238, 1);
+  }
+}
+
+.nav {
+  margin-top: 8rem;
+  position: relative;
+  &__item {
+    margin-left: 3rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgba(238, 238, 238, 0.845);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+  }
+  &__link:hover {
+    color: rgba(238, 238, 238, 1);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 1px solid rgba(238, 238, 238, 0.5);
+    width: 50rem;
+    top: -3rem;
+    left: -5rem;
+  }
+}
