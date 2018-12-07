@@ -1,3 +1,9 @@
+$color-grey-medium: rgba(255,255,255, 0.5);
+$color-grey-light: rgba(255,255,255, 0.9);
+$color-grey-dark: rgba(0, 0, 0, 0.7);
+$dark-blue: rgba(#0284A8, 0.8);
+$light-blue: rgba(#02BEC4, 0.8); 
+
 *,
 *::before,
 *::after {
@@ -6,7 +12,7 @@
   padding: 0;
 }
 
-html {
+html { 
   box-sizing: border-box;
   font-size: 62.5%;
 }

@@ -1,35 +1,40 @@
 .header {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   font-size: 1.4rem;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+  // background-image: linear-gradient($color-grey-dark, $color-grey-dark), url(../img/hero.jpg);
+  background-image: linear-gradient(270deg , $dark-blue , $light-blue), url(../img/hero.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center center;
   background-attachment: fixed;
-  color: #eee;
+  color: $color-grey-light;
 
   &__title {
     font-size: 8rem;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
+    animation: moveInLeft .5s ease;
   }
 
   &__sub-title {
     font-size: 2rem;
     font-weight: 100;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 5rem;
+    animation: moveInRight .5s ease;
   }
 
   &__intro {
     font-weight: 300;
     margin-bottom: 5rem;
+    width: 40rem;
+    animation: moveInBottom .5s ease;
   }
 
   &__profile-pic {
@@ -37,6 +42,8 @@
     width: 12rem;
     height: auto;
     border-radius: 10rem;
+    box-shadow: 0px 1px 3px $color-grey-dark;
+    animation: moveInBottom .5s ease;
   }
 }
 
@@ -44,47 +51,53 @@
 .nav {
   list-style: none;
   display: flex;
+  animation: moveInBottom .5s ease;
 }
 
 .social {
   margin-top: 2rem;
   position: relative;
-  &__item {
-    margin-left: 1rem;
+  &__item:not(:last-child) {
+    margin-right: 2rem;
   }
   &__link {
     text-decoration: none;
-    color: rgba(238, 238, 238, 0.845);
-    transition: all 0.2s ease;
+    
+    svg {
+      height: 2rem;
+      width: 2rem;
+      fill: $color-grey-medium;
+      transition: all 0.2s ease;
+    }
   }
-  &__link:hover {
-    color: rgba(238, 238, 238, 1);
+  &__link:hover svg {
+    fill: $color-grey-light;
   }
 }
 
 .nav {
-  margin-top: 8rem;
+  margin-top: 6rem;
   position: relative;
-  &__item {
-    margin-left: 3rem;
+  &__item:not(:last-child) {
+    margin-right: 3rem;
   }
   &__link {
     text-decoration: none;
-    color: rgba(238, 238, 238, 0.845);
+    color: $color-grey-medium;
     transition: all 0.2s ease;
     text-transform: uppercase;
   }
   &__link:hover {
-    color: rgba(238, 238, 238, 1);
-  }
+    color: $color-grey-light;
+  } 
 
   &::before {
     content: '';
     position: absolute;
     display: block;
-    border-top: 1px solid rgba(238, 238, 238, 0.5);
+    border-top: 1px solid $color-grey-medium;
     width: 50rem;
     top: -3rem;
-    left: -5rem;
+    left: -6.5rem;
   }
 }
