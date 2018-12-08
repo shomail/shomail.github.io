@@ -1,41 +1,48 @@
 .header {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   font-size: 1.4rem;
   justify-content: center;
   align-items: center;
-  // background-image: linear-gradient($color-grey-dark, $color-grey-dark), url(../img/hero.jpg);
-  background-image: linear-gradient(270deg , $dark-blue , $light-blue), url(../img/hero.jpg);
+  //   background-image: linear-gradient($color-grey-dark, $color-grey-dark), url(../img/hero.jpg);
+  //   background-image: linear-gradient(270deg, $dark-blue, $light-blue), url(../img/hero.jpg);
+  background-image: linear-gradient(to bottom, $dark-blue, $dark-blue), url(../img/hero2.jpg);
   background-size: cover;
   background-repeat: none;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   color: $color-grey-light;
 
   &__title {
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
-    animation: moveInLeft .5s ease;
+    animation: moveInLeft 1s ease;
   }
 
   &__sub-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 100;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 5rem;
-    animation: moveInRight .5s ease;
+    animation: moveInRight 1s ease;
   }
 
-  &__intro {
-    font-weight: 300;
-    margin-bottom: 5rem;
-    width: 40rem;
-    animation: moveInBottom .5s ease;
-  }
+  //   &__intro {
+  //     font-weight: 100;
+  //     font-size: 1.4rem;
+  //     margin-bottom: 3rem;
+  //     width: 40rem;
+  //     animation: moveInBottom 0.7s ease;
+  //     // color: $color-grey-medium;
+
+  //     p:not(:last-child) {
+  //       margin-bottom: 1rem;
+  //     }
+  //   }
 
   &__profile-pic {
     display: block;
@@ -43,7 +50,7 @@
     height: auto;
     border-radius: 10rem;
     box-shadow: 0px 1px 3px $color-grey-dark;
-    animation: moveInBottom .5s ease;
+    animation: moveInBottom 0.7s ease;
   }
 }
 
@@ -51,18 +58,18 @@
 .nav {
   list-style: none;
   display: flex;
-  animation: moveInBottom .5s ease;
+  animation: moveInBottom 0.7s ease;
 }
 
 .social {
-  margin-top: 2rem;
+  margin-top: 3rem;
   position: relative;
   &__item:not(:last-child) {
     margin-right: 2rem;
   }
   &__link {
     text-decoration: none;
-    
+
     svg {
       height: 2rem;
       width: 2rem;
@@ -89,7 +96,7 @@
   }
   &__link:hover {
     color: $color-grey-light;
-  } 
+  }
 
   &::before {
     content: '';
@@ -97,7 +104,7 @@
     display: block;
     border-top: 1px solid $color-grey-medium;
     width: 50rem;
-    top: -3rem;
+    top: -1.5rem;
     left: -6.5rem;
   }
 }

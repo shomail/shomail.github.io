@@ -1,8 +1,8 @@
-$color-grey-medium: rgba(255,255,255, 0.5);
-$color-grey-light: rgba(255,255,255, 0.9);
+$color-grey-medium: rgba(255, 255, 255, 0.5);
+$color-grey-light: rgba(255, 255, 255, 0.9);
 $color-grey-dark: rgba(0, 0, 0, 0.7);
-$dark-blue: rgba(#0284A8, 0.8);
-$light-blue: rgba(#02BEC4, 0.8); 
+$dark-blue: rgba(#0284a8, 0.9);
+$light-blue: rgba(#02bec4, 0.5);
 
 *,
 *::before,
@@ -12,7 +12,7 @@ $light-blue: rgba(#02BEC4, 0.8);
   padding: 0;
 }
 
-html { 
+html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
