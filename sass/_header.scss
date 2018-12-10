@@ -117,7 +117,6 @@
     display: block;
     border-top: 1px solid $color-grey-medium;
     width: 50rem;
-    top: -1.5rem;
-    left: -6.5rem;
+    transform: translateX(-7.5rem) translateY(-2rem);
   }
 }

@@ -1,0 +1,24 @@
+.section-about {
+  padding: 12rem 2rem;
+  text-align: center;
+
+  &__heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__intro {
+    width: 60rem;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}

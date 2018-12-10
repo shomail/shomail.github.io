@@ -3,6 +3,7 @@ $color-grey-light: rgba(255, 255, 255, 0.9);
 $color-grey-dark: rgba(0, 0, 0, 0.7);
 $color-blue-dark: rgba(#0284a8, 0.9);
 $light-blue: rgba(#02bec4, 0.5);
+$color-font: #555;
 
 *,
 *::before,
@@ -21,4 +22,5 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 1.6;
+  color: $color-font;
 }
