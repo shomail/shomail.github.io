@@ -1,0 +1,30 @@
+.section-skills {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue-dark), url(../img/pattern.png);
+  // background-color: $color-blue-dark;
+  font-size: 1.6rem;
+
+  &__box {
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px $color-grey-dark;
+    margin-top: -6rem;
+    padding: 2rem;
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__icon svg {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-blue-dark;
+  }
+}
