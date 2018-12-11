@@ -157,7 +157,8 @@ body {
     width: 40rem;
     text-align: center;
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 300;
+    text-transform: uppercase;
     margin: 0 auto;
     margin-top: -6rem;
     margin-bottom: 2rem;
