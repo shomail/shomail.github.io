@@ -5,7 +5,8 @@
   font-size: 1.4rem;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue-dark), url(../img/hero-min.jpg);
+  background-image: linear-gradient(to bottom, rgba($color-blue-dark, 0.9), rgba($color-blue-dark, 0.9)),
+    url(../img/hero-min.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center;
