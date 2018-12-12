@@ -1,6 +1,5 @@
 .section-about {
-  padding: 12rem 2rem;
-  padding-bottom: 18rem;
+  padding: 10rem 2rem;
   text-align: center; }
   .section-about__heading {
     font-size: 3rem;
@@ -48,7 +47,9 @@
 *::after {
   box-sizing: inherit;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility; }
 
 html {
   box-sizing: border-box;
@@ -131,43 +132,58 @@ body {
   margin-top: 6rem;
   position: relative; }
   .nav__item:not(:last-child) {
-    margin-right: 3rem; }
+    margin-right: 4rem; }
   .nav__link {
+    position: relative;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
     text-transform: uppercase; }
+  .nav__link::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -1.5rem;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.3s ease; }
   .nav__link:hover {
     color: rgba(255, 255, 255, 0.9); }
+  .nav__link:hover:before {
+    visibility: visible;
+    transform: scaleX(1); }
   .nav::before {
     content: '';
     position: absolute;
     display: block;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     width: 50rem;
-    transform: translateX(-7.5rem) translateY(-2rem); }
+    transform: translateX(-9rem) translateY(-2rem); }
 
 .section-skills {
-  background-image: linear-gradient(to bottom, rgba(2, 132, 168, 0.5), rgba(2, 132, 168, 0.5)), url(../img/pattern.png);
+  background-image: linear-gradient(to bottom, rgba(2, 132, 168, 0.7), rgba(2, 132, 168, 0.7)), url(../img/pattern.png);
   font-size: 1.6rem;
-  padding: 2rem 0;
-  padding-bottom: 6rem; }
+  padding: 4rem 0;
+  padding-bottom: 10rem; }
   .section-skills__heading {
     background: #fff;
     width: 40rem;
     text-align: center;
-    font-size: 5rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 400;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
-    transform: skew(-30deg);
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 2px #f3f3f3; }
+    margin-bottom: 4rem;
+    padding: 1rem;
+    transform: skew(-10deg);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); }
     .section-skills__heading span {
       display: inline-block;
-      transform: skew(30deg); }
+      transform: skew(10deg); }
   .section-skills__container {
     display: flex;
     justify-content: center;
@@ -175,7 +191,7 @@ body {
     background-color: #fff;
     border: 1px solid #fff;
     max-width: 120rem;
-    box-shadow: 0px 0px 2px #666; }
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); }
   .section-skills__box {
     padding: 6rem 4rem 2rem 4rem;
     flex: 1; }
