@@ -76,13 +76,13 @@ body {
   color: rgba(255, 255, 255, 0.9); }
   .header__title {
     font-size: 10rem;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
     animation: moveInLeft 1s ease; }
   .header__sub-title {
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 5rem;
@@ -140,7 +140,7 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase; }
   .nav__link::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 3px;
     width: 100%;
@@ -167,8 +167,8 @@ body {
 .section-skills {
   background-image: linear-gradient(to bottom, rgba(2, 132, 168, 0.7), rgba(2, 132, 168, 0.7)), url(../img/pattern.png);
   font-size: 1.6rem;
-  padding: 4rem 0;
-  padding-bottom: 10rem; }
+  padding: 10rem 0;
+  padding-bottom: 14rem; }
   .section-skills__heading {
     background: #fff;
     width: 40rem;
@@ -179,11 +179,9 @@ body {
     margin: 0 auto;
     margin-bottom: 4rem;
     padding: 1rem;
-    transform: skew(-10deg);
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); }
     .section-skills__heading span {
-      display: inline-block;
-      transform: skew(10deg); }
+      display: inline-block; }
   .section-skills__container {
     display: flex;
     justify-content: center;
@@ -224,3 +222,17 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 2rem; }
+
+.section-work {
+  padding: 10rem 0; }
+  .section-work__heading {
+    background: #fff;
+    width: 40rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); }

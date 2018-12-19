@@ -1,0 +1,17 @@
+.section-work {
+  padding: 10rem 0;
+
+  &__heading {
+    background: #fff;
+    width: 40rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    // transform: skew(-10deg);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
