@@ -2,18 +2,18 @@
   background-image: linear-gradient(to bottom, rgba($color-blue-dark, 0.7), rgba($color-blue-dark, 0.7)),
     url(../img/pattern.png);
   font-size: 1.6rem;
-  padding: 10rem 0;
+  padding: 8rem 0;
   padding-bottom: 14rem;
 
   &__heading {
     background: #fff;
     width: 40rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     padding: 1rem;
     // transform: skew(-10deg);
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);

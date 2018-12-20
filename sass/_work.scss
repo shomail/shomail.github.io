@@ -5,18 +5,17 @@
     background: #fff;
     width: 40rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 auto;
     margin-bottom: 4rem;
     padding: 1rem;
-    // transform: skew(-10deg);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 10px rgba($color-blue-dark, 0.6);
   }
 
   &__grid {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin-top: 10rem;
   }
@@ -24,12 +23,20 @@
   &__project {
     flex: 1;
     margin-right: 3rem;
-    border: 1px solid #eee;
-    min-height: 25rem;
+    height: 30rem;
     border-radius: 1rem;
-    box-shadow: 0px 0px 0px 10px #eee;
+    box-shadow: 0px 0px 0px 3px #eee;
     text-align: center;
-    line-height: 25rem;
+    // line-height: 25rem;
+    background-size: 45rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    padding-top: 5rem;
+
+    &:hover {
+      background-size: 50rem;
+    }
   }
 
   &__project:first-child {
@@ -37,46 +44,38 @@
   }
 
   &__title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: .5rem;
-    // font-style: italic;
+    letter-spacing: 0.5rem;
   }
 
   &__project--easymeal {
-    background-image: linear-gradient(rgba(#e67e22, 0.8), rgba(#e67e22, 0.8)), url(../img/easymeal.jpg);
-    background-size: 40rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease;
-
-    &:hover {
-      background-size: 45rem;
-    }
+    background-image: linear-gradient(rgba(#e67e22, 0.9), rgba(#e67e22, 0.9)), url(../img/easymeal.jpg);
   }
 
   &__project--recipify {
-    background-image: linear-gradient(rgba(#8BC34A, 0.8), rgba(#8BC34A, 0.8)), url(../img/recipify.jpg);
-    background-size: 40rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease;
-    &:hover {
-      background-size: 45rem;
-    }
+    background-image: linear-gradient(rgba(#8bc34a, 0.9), rgba(#8bc34a, 0.9)), url(../img/recipify.jpg);
   }
 
   &__project--jarvis {
-    background-image: linear-gradient(rgba(#673AB7, 0.8), rgba(#673AB7, 0.8)), url(../img/jarvis.jpg);
-    background-size: 40rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease;
-    &:hover {
-      background-size: 45rem;
-    }
+    background-image: linear-gradient(rgba(#673ab7, 0.9), rgba(#673ab7, 0.9)), url(../img/jarvis.jpg);
   }
 
+  &__list {
+    display: flex;
+    border: 1px solid black;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
