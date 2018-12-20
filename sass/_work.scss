@@ -14,4 +14,69 @@
     // transform: skew(-10deg);
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  &__grid {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  &__project {
+    flex: 1;
+    margin-right: 3rem;
+    border: 1px solid #eee;
+    min-height: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0px 10px #eee;
+    text-align: center;
+    line-height: 25rem;
+  }
+
+  &__project:first-child {
+    margin-left: 3rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    // font-style: italic;
+  }
+
+  &__project--easymeal {
+    background-image: linear-gradient(rgba(#e67e22, 0.8), rgba(#e67e22, 0.8)), url(../img/easymeal.jpg);
+    background-size: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 45rem;
+    }
+  }
+
+  &__project--recipify {
+    background-image: linear-gradient(rgba(#8BC34A, 0.8), rgba(#8BC34A, 0.8)), url(../img/recipify.jpg);
+    background-size: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    &:hover {
+      background-size: 45rem;
+    }
+  }
+
+  &__project--jarvis {
+    background-image: linear-gradient(rgba(#673AB7, 0.8), rgba(#673AB7, 0.8)), url(../img/jarvis.jpg);
+    background-size: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    &:hover {
+      background-size: 45rem;
+    }
+  }
+
 }
