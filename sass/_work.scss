@@ -23,19 +23,18 @@
   &__project {
     flex: 1;
     margin-right: 3rem;
-    height: 30rem;
+    height: 25rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 0px 3px #eee;
     text-align: center;
     // line-height: 25rem;
-    background-size: 45rem;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.5s ease;
-    padding-top: 5rem;
 
     &:hover {
-      background-size: 50rem;
+      background-size: calc(100% + 3rem);
     }
   }
 
@@ -52,26 +51,31 @@
   }
 
   &__project--easymeal {
-    background-image: linear-gradient(rgba(#e67e22, 0.9), rgba(#e67e22, 0.9)), url(../img/easymeal.jpg);
+    // background-image: linear-gradient(rgba(#e67e22, 0.9), rgba(#e67e22, 0.9)), url(../img/easymeal.jpg);
+    background-image: linear-gradient(rgba(#0284a8, 0.9), rgba(#0284a8, 0.9)), url(../img/easymeal.jpg);
   }
 
   &__project--recipify {
-    background-image: linear-gradient(rgba(#8bc34a, 0.9), rgba(#8bc34a, 0.9)), url(../img/recipify.jpg);
+    // background-image: linear-gradient(rgba(#8bc34a, 0.9), rgba(#8bc34a, 0.9)), url(../img/recipify.jpg);
+    background-image: linear-gradient(rgba(#0284a8, 0.9), rgba(#0284a8, 0.9)), url(../img/recipify.jpg);
   }
 
   &__project--jarvis {
-    background-image: linear-gradient(rgba(#673ab7, 0.9), rgba(#673ab7, 0.9)), url(../img/jarvis.jpg);
+    // background-image: linear-gradient(rgba(#673ab7, 0.9), rgba(#673ab7, 0.9)), url(../img/jarvis.jpg);
+    background-image: linear-gradient(rgba(#0284a8, 0.9), rgba(#0284a8, 0.9)), url(../img/jarvis.jpg);
   }
 
   &__list {
     display: flex;
-    border: 1px solid black;
     padding: 0;
+    list-style: none;
+    justify-content: center;
+    // align-items: center;
   }
 
   &__item {
-    padding: 0;
-    margin: 0;
+    // padding: 0;
+    margin-right: 3rem;
   }
 
   &__link svg {

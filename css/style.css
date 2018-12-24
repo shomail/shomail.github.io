@@ -243,17 +243,16 @@ body {
   .section-work__project {
     flex: 1;
     margin-right: 3rem;
-    height: 30rem;
+    height: 25rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 0px 3px #eee;
     text-align: center;
-    background-size: 45rem;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.5s ease;
-    padding-top: 5rem; }
+    transition: all 0.5s ease; }
     .section-work__project:hover {
-      background-size: 50rem; }
+      background-size: calc(100% + 3rem); }
   .section-work__project:first-child {
     margin-left: 3rem; }
   .section-work__title {
@@ -263,18 +262,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5rem; }
   .section-work__project--easymeal {
-    background-image: linear-gradient(rgba(230, 126, 34, 0.9), rgba(230, 126, 34, 0.9)), url(../img/easymeal.jpg); }
+    background-image: linear-gradient(rgba(2, 132, 168, 0.9), rgba(2, 132, 168, 0.9)), url(../img/easymeal.jpg); }
   .section-work__project--recipify {
-    background-image: linear-gradient(rgba(139, 195, 74, 0.9), rgba(139, 195, 74, 0.9)), url(../img/recipify.jpg); }
+    background-image: linear-gradient(rgba(2, 132, 168, 0.9), rgba(2, 132, 168, 0.9)), url(../img/recipify.jpg); }
   .section-work__project--jarvis {
-    background-image: linear-gradient(rgba(103, 58, 183, 0.9), rgba(103, 58, 183, 0.9)), url(../img/jarvis.jpg); }
+    background-image: linear-gradient(rgba(2, 132, 168, 0.9), rgba(2, 132, 168, 0.9)), url(../img/jarvis.jpg); }
   .section-work__list {
     display: flex;
-    border: 1px solid black;
-    padding: 0; }
-  .section-work__item {
     padding: 0;
-    margin: 0; }
+    list-style: none;
+    justify-content: center; }
+  .section-work__item {
+    margin-right: 3rem; }
   .section-work__link svg {
     width: 2rem;
     height: 2rem; }
